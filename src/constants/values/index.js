@@ -1,0 +1,17 @@
+const reducer = {
+  LOADING: 'LOADING',
+  ISLOGIN: 'ISLOGIN',
+  ISFIRSTLAUNCH: 'ISFIRSTLAUNCH',
+  DISABLE: 'DISABLE',
+  DATAUSER: 'DATAUSER',
+  TOGGLEPICKERIMG: 'TOGGLEPICKERIMG',
+  TOGGLENOTIF: 'TOGGLENOTIF',
+  TOGGLEASK: 'TOGGLEASK',
+  PHOTOTYPE: 'PHOTOTYPE',
+};
+
+const photo = {
+  user: 'user',
+};
+
+export {reducer, photo};

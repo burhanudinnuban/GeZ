@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "543528381573",
+    "project_id": "gez-project",
+    "storage_bucket": "gez-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543528381573:android:f3cec520ebf259c4430dec",
+        "android_client_info": {
+          "package_name": "com.gez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543528381573-1ttb4oaiupnhov78kn8pedto03dn9bpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gez",
+            "certificate_hash": "051f27e9887476af2d4a3f421280689f6db5ea22"
+          }
+        },
+        {
+          "client_id": "543528381573-f1kgctaje8jlmc2dnf5f7m1q3371sesj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZkfQiSjV0YRLEElvx5-HsgOeh_dyz6Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543528381573-f1kgctaje8jlmc2dnf5f7m1q3371sesj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
