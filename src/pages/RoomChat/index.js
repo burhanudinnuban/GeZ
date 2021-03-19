@@ -1,9 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text} from 'react-native';
-import {GiftedChat} from 'react-native-gifted-chat';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {GiftedChat, Send} from 'react-native-gifted-chat';
 import database from '@react-native-firebase/database';
 import {useSelector, useDispatch} from 'react-redux';
 import firestore from '@react-native-firebase/firestore';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import colors from '../../constants/colors';
+import {styles} from '../../configs/styles';
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from 'react-native-responsive-screen';
 
 const RoomChat = ({route}) => {
   const {thread} = route.params;
@@ -80,7 +87,30 @@ const RoomChat = ({route}) => {
   return (
     <GiftedChat
       messages={messages}
-      onSend={(newMessage) => handleSend(newMessage)}
+      alwaysShowSend
+      renderSend={(props) => (
+        <Send {...props}>
+          <View
+            style={{
+              borderRadius: 100,
+              backgroundColor: colors.mimosa,
+              padding: 8,
+              marginRight: 5,
+              alignSelf: 'center',
+            }}>
+            <Icon
+              name={'paper-plane'}
+              color={colors.darkGray}
+              size={widthPercentageToDP(7)}
+              brand
+            />
+          </View>
+        </Send>
+      )}
+      onSend={(newMessage) => {
+        handleSend(newMessage);
+        console.log(newMessage);
+      }}
       user={{
         _id: user.uid,
       }}

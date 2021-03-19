@@ -42,11 +42,6 @@ const Home = () => {
           </TouchableOpacity>
         }
       />
-      <FlatList
-        data={['ikan', 'udang', 'lobster']}
-        numColumns={2}
-        renderItem={({item}) => <Text>{item}</Text>}
-      />
     </View>
   );
 };
